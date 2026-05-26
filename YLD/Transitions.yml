@@ -1,0 +1,10 @@
+extends: existence
+message: "'%s' is overused. Prefer 'also', restructure, or cut it."
+level: warning
+ignorecase: false
+tokens:
+  - Moreover
+  - Furthermore
+  - Additionally
+  - 'On the other hand'
+  - 'In addition'

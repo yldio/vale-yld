@@ -1,0 +1,12 @@
+extends: existence
+message: "Avoid '%s'. End sections by finishing the thought, not restating it."
+level: error
+ignorecase: true
+tokens:
+  - 'In summary'
+  - 'In conclusion'
+  - 'In essence'
+  - '\bOverall\b'
+  - 'To summarize'
+  - 'To sum up'
+  - 'All in all'

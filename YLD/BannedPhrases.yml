@@ -1,0 +1,22 @@
+extends: existence
+message: "Avoid '%s'."
+level: error
+ignorecase: true
+tokens:
+  - "It'?s important to note"
+  - "It is important to note"
+  - "It is worth (mentioning|noting)"
+  - "It'?s worth (mentioning|noting)"
+  - "No discussion would be complete without"
+  - "In today'?s ever-evolving"
+  - "In the realm of"
+  - "a testament to"
+  - "stands as a testament"
+  - "plays a (vital|key|crucial) role"
+  - "Rich cultural heritage"
+  - "breathtaking views?"
+  - "stunning natural beauty"
+  - "dynamic hub"
+  - "captivates? (visitors?|residents?) (and|alike)"
+  - "One of the most important things to consider"
+  - "at its core"

@@ -1,0 +1,41 @@
+extends: substitution
+message: "Use the official name '%s' instead of '%s'."
+level: warning
+ignorecase: false
+action:
+  name: replace
+swap:
+  # JavaScript ecosystem
+  Javascript: JavaScript
+  Typescript: TypeScript
+  NodeJS: Node.js
+  Nodejs: Node.js
+  'node.js': Node.js
+  NPM: npm
+  Npm: npm
+  VueJS: Vue.js
+  Vuejs: Vue.js
+  ReactJS: React
+  Reactjs: React
+  NextJS: Next.js
+  Nextjs: Next.js
+  # Version control / platforms
+  Github: GitHub
+  Gitlab: GitLab
+  Bitbucket: Bitbucket
+  # Languages
+  Golang: Go
+  golang: Go
+  Python3: Python
+  # Cloud / infra
+  Kubernetes: Kubernetes
+  k8S: k8s
+  Postgresql: PostgreSQL
+  MySql: MySQL
+  MongoDb: MongoDB
+  Elasticsearch: Elasticsearch
+  GraphQl: GraphQL
+  Graphql: GraphQL
+  # Package managers
+  Yarn: yarn
+  Pnpm: pnpm

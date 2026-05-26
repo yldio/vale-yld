@@ -1,0 +1,6 @@
+extends: existence
+message: "Trailing '%s' adds no information. Cut the clause or rewrite with a specific reason."
+level: warning
+nonword: true
+tokens:
+  - ',\s+(highlighting|underscoring|emphasizing|reflecting|demonstrating)\b'

@@ -1,0 +1,25 @@
+extends: substitution
+message: "Prefer '%s' over '%s'."
+level: error
+ignorecase: true
+action:
+  name: replace
+swap:
+  delve: explore
+  tapestry: mix
+  testament: proof
+  multifaceted: complex
+  vibrant: lively
+  pivotal: important
+  realm: area
+  meticulous: careful
+  intricacies: details
+  nuanced: subtle
+  landscape: field
+  cutting-edge: modern
+  revolutionary: significant
+  embark: start
+  foster: encourage
+  robust: reliable
+  seamless: smooth
+  synergy: collaboration

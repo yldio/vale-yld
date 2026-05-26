@@ -1,0 +1,25 @@
+extends: existence
+message: "Remove '%s'. It adds no information."
+level: error
+ignorecase: true
+tokens:
+  # Sycophantic openers
+  - "Great question"
+  - "Certainly!"
+  - "Absolutely!"
+  - "Of course!"
+  - "I'?d be happy to (help|explain|walk)"
+  - "I'?m glad you asked"
+  # Meta-commentary
+  - "It'?s worth (noting|mentioning) that"
+  - "it should be noted that"
+  - "it goes without saying"
+  - "needless to say"
+  # AI knowledge cutoff
+  - "as of my (last|latest) (update|knowledge|training)"
+  - "as of my knowledge cutoff"
+  # Hedging
+  - "it'?s important to (note|remember|understand) that"
+  # Inanimate attribution
+  - "this (statistic|figure|data|number|report|study|research|finding) (highlights?|underscores?|emphasizes?|demonstrates?|shows? us|reminds? us)"
+  - "the (statistic|figure|data|number|report|study|research|finding) (highlights?|underscores?|emphasizes?|demonstrates?|shows? us|reminds? us)"
