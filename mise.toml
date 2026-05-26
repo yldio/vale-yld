@@ -1,6 +1,8 @@
 [tools]
 vale = "3.14.2"
 bats = "1.13.0"
+jq = "1.8.1"
+minisign = "0.12"
 
 [tasks.test]
 description = "Run all rule tests"
@@ -12,3 +14,18 @@ description = "Run all rule tests with full sandbox (Linux CI only)"
 run = "bats tests/"
 deny_net = true
 allow_read = ["tests/"]
+
+[tasks.package]
+description = "Build the Vale package ZIP"
+run = "zip -r YLD.zip YLD/"
+deny_net = true
+
+[tasks.sign]
+description = "Sign YLD.zip with minisign (requires MINISIGN_KEY env var)"
+run = """
+printf '%s' "$MINISIGN_KEY" > /tmp/minisign_release.key
+minisign -Sm YLD.zip -s /tmp/minisign_release.key
+minisign -Vm YLD.zip -p minisign.pub
+rm /tmp/minisign_release.key
+"""
+deny_net = true

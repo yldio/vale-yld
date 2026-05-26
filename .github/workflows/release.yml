@@ -1,0 +1,43 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: jdx/mise-action@v3
+
+      - name: Test
+        run: mise run test:ci
+
+      - name: Package
+        run: mise run package
+
+      - name: Sign
+        run: mise run sign
+        env:
+          MINISIGN_KEY: ${{ secrets.MINISIGN_KEY }}
+
+      - name: Attest
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: YLD.zip
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            YLD.zip
+            YLD.zip.minisig
+          generate_release_notes: true

@@ -11,7 +11,7 @@ Add to your `.vale.ini`:
 ```ini
 StylesPath = .vale/styles
 MinAlertLevel = suggestion
-Packages = GitHub/yldio/vale-yld
+Packages = https://github.com/yldio/vale-yld/releases/latest/download/YLD.zip
 
 [*.md]
 BasedOnStyles = YLD
@@ -21,6 +21,12 @@ Then run:
 
 ```sh
 vale sync
+```
+
+Verify the package signature before use:
+
+```sh
+minisign -Vm .vale/styles/YLD.zip -p https://raw.githubusercontent.com/yldio/vale-yld/main/minisign.pub
 ```
 
 ## Rules
