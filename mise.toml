@@ -1,8 +1,14 @@
 [tools]
-vale = "latest"
-bats = "latest"
+vale = "3.14.2"
+bats = "1.13.0"
 
 [tasks.test]
 description = "Run all rule tests"
 run = "bats tests/"
 deny_net = true
+
+[tasks."test:ci"]
+description = "Run all rule tests with full sandbox (Linux CI only)"
+run = "bats tests/"
+deny_net = true
+allow_read = ["tests/"]
