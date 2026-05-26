@@ -1,0 +1,38 @@
+[
+  {
+    "check": "YLD.ForbiddenPhrases",
+    "line": 1,
+    "match": "Great question",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.ForbiddenPhrases",
+    "line": 1,
+    "match": "I'd be happy to explain",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.ForbiddenPhrases",
+    "line": 2,
+    "match": "As of my last update",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedPhrases",
+    "line": 3,
+    "match": "It's worth noting",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.ForbiddenPhrases",
+    "line": 3,
+    "match": "It's worth noting that",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.ForbiddenPhrases",
+    "line": 4,
+    "match": "This statistic highlights",
+    "severity": "error"
+  }
+]

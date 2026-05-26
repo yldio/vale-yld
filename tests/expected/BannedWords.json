@@ -1,0 +1,50 @@
+[
+  {
+    "check": "YLD.BannedWords",
+    "line": 1,
+    "match": "delve",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedWords",
+    "line": 1,
+    "match": "embark",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedWords",
+    "line": 2,
+    "match": "foster",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedWords",
+    "line": 2,
+    "match": "robust",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedWords",
+    "line": 2,
+    "match": "seamless",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedWords",
+    "line": 3,
+    "match": "landscape",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedWords",
+    "line": 3,
+    "match": "multifaceted",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedWords",
+    "line": 3,
+    "match": "nuanced",
+    "severity": "error"
+  }
+]

@@ -1,0 +1,8 @@
+[tools]
+vale = "latest"
+bats = "latest"
+
+[tasks.test]
+description = "Run all rule tests"
+run = "bats tests/"
+deny_net = true

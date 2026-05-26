@@ -1,0 +1,38 @@
+[
+  {
+    "check": "YLD.Terminology",
+    "line": 1,
+    "match": "Javascript",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.Terminology",
+    "line": 2,
+    "match": "NodeJS",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.Terminology",
+    "line": 3,
+    "match": "Github",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.Terminology",
+    "line": 4,
+    "match": "Golang",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.Terminology",
+    "line": 5,
+    "match": "Javascript",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.Terminology",
+    "line": 5,
+    "match": "Typescript",
+    "severity": "warning"
+  }
+]

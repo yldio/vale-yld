@@ -1,0 +1,32 @@
+[
+  {
+    "check": "YLD.Transitions",
+    "line": 1,
+    "match": "Moreover",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.Transitions",
+    "line": 2,
+    "match": "Furthermore",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.Transitions",
+    "line": 3,
+    "match": "Additionally",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.Transitions",
+    "line": 4,
+    "match": "On the other hand",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.Transitions",
+    "line": 5,
+    "match": "In addition",
+    "severity": "warning"
+  }
+]

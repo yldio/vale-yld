@@ -1,0 +1,50 @@
+[
+  {
+    "check": "YLD.BannedPhrases",
+    "line": 1,
+    "match": "It's important to note",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.ForbiddenPhrases",
+    "line": 1,
+    "match": "It's important to note that",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedPhrases",
+    "line": 2,
+    "match": "plays a vital role",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedPhrases",
+    "line": 3,
+    "match": "At its core",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedPhrases",
+    "line": 4,
+    "match": "In today's ever-evolving",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedPhrases",
+    "line": 5,
+    "match": "One of the most important things to consider",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedPhrases",
+    "line": 6,
+    "match": "It is worth noting",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.BannedPhrases",
+    "line": 7,
+    "match": "No discussion would be complete without",
+    "severity": "error"
+  }
+]

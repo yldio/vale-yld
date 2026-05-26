@@ -1,0 +1,8 @@
+[
+  {
+    "check": "YLD.AmbiguousWords",
+    "line": 1,
+    "match": "leverage",
+    "severity": "warning"
+  }
+]

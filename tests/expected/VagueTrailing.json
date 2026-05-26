@@ -1,0 +1,32 @@
+[
+  {
+    "check": "YLD.VagueTrailing",
+    "line": 1,
+    "match": ", highlighting",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.VagueTrailing",
+    "line": 2,
+    "match": ", underscoring",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.VagueTrailing",
+    "line": 3,
+    "match": ", emphasizing",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.VagueTrailing",
+    "line": 4,
+    "match": ", reflecting",
+    "severity": "warning"
+  },
+  {
+    "check": "YLD.VagueTrailing",
+    "line": 5,
+    "match": ", demonstrating",
+    "severity": "warning"
+  }
+]

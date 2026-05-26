@@ -1,0 +1,44 @@
+[
+  {
+    "check": "YLD.SummaryPhrases",
+    "line": 1,
+    "match": "In summary",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.SummaryPhrases",
+    "line": 2,
+    "match": "In conclusion",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.SummaryPhrases",
+    "line": 3,
+    "match": "In essence",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.SummaryPhrases",
+    "line": 4,
+    "match": "Overall",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.SummaryPhrases",
+    "line": 5,
+    "match": "To summarize",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.SummaryPhrases",
+    "line": 6,
+    "match": "To sum up",
+    "severity": "error"
+  },
+  {
+    "check": "YLD.SummaryPhrases",
+    "line": 7,
+    "match": "All in all",
+    "severity": "error"
+  }
+]
