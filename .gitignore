@@ -1,3 +1,15 @@
+# Build artifacts
 YLD.zip
 YLD.zip.minisig
+
+# Signing keys — never commit private keys
 *.key
+
+# communique release notes (generated at CI time)
+notes.md
+
+# macOS
+.DS_Store
+
+# mise
+.mise.local.toml
