@@ -1,8 +1,12 @@
+[settings]
+experimental = true
+
 [tools]
 vale = "3.14.2"
 bats = "1.13.0"
 jq = "1.8.1"
 minisign = "0.12"
+communique = "1.1.3"
 
 [tasks.test]
 description = "Run all rule tests"
@@ -13,7 +17,7 @@ deny_net = true
 description = "Run all rule tests with full sandbox (Linux CI only)"
 run = "bats tests/"
 deny_net = true
-allow_read = ["tests/"]
+allow_read = ["tests/", "YLD/", ".vale.ini"]
 
 [tasks.package]
 description = "Build the Vale package ZIP"
