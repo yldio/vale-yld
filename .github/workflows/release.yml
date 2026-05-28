@@ -11,8 +11,20 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151 # v4.0.1
+      - run: mise run test:ci
+
   release:
     name: Release
+    needs: test
     runs-on: ubuntu-latest
     environment: release
     permissions:
@@ -21,7 +33,6 @@ jobs:
       attestations: write  # write the attestation record to the repository
       issues: write        # semantic-release comments on resolved issues
       pull-requests: write # semantic-release comments on merged pull requests
-      models: read         # GitHub Models inference for communique release notes
 
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -34,9 +45,6 @@ jobs:
           # Cache disabled: this workflow publishes artifacts, so a poisoned
           # cache entry could tamper with the release build.
           cache: false
-
-      - name: Test
-        run: mise run test:ci
 
       - name: Release
         id: release
@@ -58,13 +66,11 @@ jobs:
         if: steps.release.outputs.new_release_published == 'true'
         run: |
           communique generate "v${RELEASE_VERSION}" \
-            --provider openai \
-            --base-url https://models.github.ai/inference \
-            --model gpt-4o \
+            --model claude-sonnet-4-6 \
             --output notes.md
         env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.GITHUB_TOKEN }}
           RELEASE_VERSION: ${{ steps.release.outputs.new_release_version }}
 
       - name: Publish release
